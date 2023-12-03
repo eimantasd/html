@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- 2. LANGUAGE OF DOCUMENT TAGS -->
+  <title>Lecture 2 - HTML5: Text</title>
+  <meta charset="utf-8"/>
+</head>
+
+<body>
+
+  <!-- 2.3. Text Creation and Formatting -->
+  <h1>Text Examples</h1>
+
+  <h2>Paragraph</h2>
+  <p id="top"> A programmer is a person who specializes in creating, designing, and writing instructions in the form of code or scripts that a computer can understand and execute. Programmers use various programming languages to develop software applications, websites, and other computer programs. They are responsible for solving complex problems, implementing algorithms, and ensuring that the software functions as intended. Programmers play a crucial role in the field of computer science and software development, and they are essential for creating the technology and software that power today's digital world.
+  </p>
+
+  <h2>Paragraph with a Quote</h2>
+  <p>
+    <cite>Folk Wisdom</cite> says -
+    <q>if the <i>Admin</i> is at work at 9 AM, it means the server is down!</q>
+  </p>
+
+  <h2>Paragraph with Line Breaks</h2>
+  <p>
+    <cite>Folk Wisdom</cite> says - <br/>
+    <q>if <i>Admin</i> is at work at 9 AM, it means the ser<wbr/>ver is not<wbr/> working!</q>
+  </p>
+
+  <h2>Emphasized Paragraph Formatting</h2>
+  <p><em><b>You</b> have no conscience!</em> - cries the frustrated programmer.
+  </p>
+
+  <h2>Formatted Pre-Text</h2>
+  
+  <p>Average IT specialist's gross salary in Vilnius</p>
+  <pre>
+    Year:   2013  2014  2015  2016  2017  2018  2019  2020  2021  2022
+      EUR:   760   797   832   890   968  1000  1200  1400  1450  1500
+  </pre>
+
+  <h2>Long Quote</h2>
+  <p>Here are some thoughts from computer professionals:</p>
+  <blockquote>
+    <p>Protect your keyboard - it's your communication organ with the outside world.
+    </p>
+    <p>Why don't programmers like nature? It has too many bugs!
+    </p>
+  </blockquote>
+
+  <!-- Character Table :: Alt-l -->
+  <h2>Special Symbols</h2>
+  <p>
+    &ge; &pi; &copy; &reg; &amp;  Table&nbsp;1
+  </p>
+
+  <!-- 2.4. Document Links -->
+  <h1>Document Links</h1>
+  <a href="http://www.vilniustech.lt">Vilnius tech</a><br>
+  <a href="#top">Top</a>
+
+  <!-- 2.5. Images -->
+  <h1>Images</h1>
+  <img src="https://rekvizitai.vz.lt/photos/vilniaus_gedimino_technikos_universitetas.jpg" height="100" width="100" alt="Capacitor"/>
+  <!-- Do not use :: vspace="10" hspace="10" -->
+
+  <!-- 2.6. Lists -->
+  <h1>Lists</h1>
+
+  <h2>Unordered</h2>
+  <p>Classification:
+    <ul>
+      <li>demo version;</li>
+      <li>trial version;</li>
+      <li>personal edition;</li>
+      <li>professional edition;</li>
+      <li>network edition;</li>
+      <li>enterprise;</li>
+      <li>small business;</li>
+      <li>corporate edition;</li>
+      <li>extreme edition;</li>
+      <li>global edition;</li>
+    </ul>
+  </p>
+
+  <h2>Ordered</h2>
+  <p><i>Admin's</i> work days:
+    <ol>
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+      <li>Friday</li>
+      <li>Saturday</li>
+      <li>Sunday</li>
+    </ol>
+  </p>
+
+  <h2>Definition List</h2>
+  <dl>
+    <dt>Programmer -</dt>
+    <dd>someone who solves a problem in a way you don't understand.</dd>
+  </dl>
+
+  <!-- 2.7. Tables -->
+  <h1>Tables</h1>
+
+  <h2>Basic Table</h2>
+  <table border="1">
+    <caption>Characteristics with positive and negative sides*
+    </caption>
+      <tr>
+        <th> Negative</th>
+        <th> Characteristic</th>
+        <th> Positive</th>
+      </tr>
+      <tr>
+        <td> Sad </td>
+        <td> Mood</td>
+        <td> Happy</td>
+      <tr>
+        <td> Failing</td>
+        <td> Grade</td>
+        <td> Passing</td>
+      </tr>
+  </table>
+
+  <h2>Simple Table</h2>
+  <table border="1">
+    <caption>Characteristics with positive and negative sides*
+    </caption>
+    <thead>
+      <tr>
+        <th> Negative</th>
+        <th> Characteristic</th>
+        <th> Positive</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Sad </td>
+        <th> Mood</th>
+        <td> Happy</td>
+      </tr>
+      <tr>
+        <td> Failing</td>
+        <th id="r2"> Grade</th>
+        <td> Passing</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Footer</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Complex Table</h2>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>Row 1 - Col 1</td>
+        <td>Row 1 - Col 2</td>
+        <td>Row 1 - Col 3</td>
+        <td rowspan="4">Row 1, 2, 3 &amp; 4 - Col 4</td>
+      </tr>
+      <tr>
+        <td>Row 2 - Col 1</td>
+        <td colspan="2" rowspan="3">Row 2, 3 &amp; 4 - Col 2 &amp; 3</td>
+      </tr>
+      <tr>
+        <td>Row 3 - Col 1</td>
+      </tr>
+      <tr>
+        <td>Row 4 - Col 1</td>
+      </tr>
+      <tr>
+        <td colspan="2">Row 5 - Col 1 &amp; 2</td>
+        <td colspan="2">Row 5 - Col 3 &amp; 4</td>
+      </tr>
+      <tr>
+        <td colspan="4">Row 6 - Col 1, 2, 3 & 4</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Footer</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

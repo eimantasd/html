@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    flex-flow: column wrap-reverse;
+    align-content: space-around;
+    background-color: lightblue;
+    height: 600px;
+  }
+  
+.wrapper > section {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+/* flex-direction: column, column-reverse, row, row-reverse */
+/* flex-wrap: wrap, nowrap, wrap-reverse */
+/* flex-flow: row wrap   //flex-direction + flex-wrap  
+/* justify-content: center, flex-start, flex-end, space-around, space-between */
+/* [height, heading] align-items: center, flex-start, flex-end, stretch, baseline */ 
+/* [height, flex-wrap] align-content: space-between, space-around, stretch, center, flex-start, flex-end */

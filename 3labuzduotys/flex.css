@@ -1,0 +1,25 @@
+/* use it with 1-website.flex.html */
+
+.wrapper {
+    display: flex;
+    background-color: lightblue;
+  }
+  
+.wrapper > section {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+/* 
+flex-direction: column, column-reverse, row, row-reverse 
+flex-wrap: wrap, nowrap, wrap-reverse 
+flex-flow: row wrap   //flex-direction + flex-wrap  
+justify-content: center, flex-start, flex-end, space-around, space-between 
+align-items: center, flex-start, flex-end, stretch, baseline                         // Important to try with 'height', 'heading' in the wrapper sections
+align-content: space-between, space-around, stretch, center, flex-start, flex-end    // Important to try with 'height', 'flex-wrap' in the wrapper sections
